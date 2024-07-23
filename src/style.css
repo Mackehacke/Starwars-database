@@ -1,0 +1,103 @@
+/* Länk som hämtar typsnitt från Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+/* Bakgrundsbilden till webbsidan blir en Star Wars bild på Millenium Falcon och den ska täcka hela sidan. */
+body {
+  background: url('https://cdn.pixabay.com/photo/2016/08/29/01/56/millenium-falcon-1627322_960_720.jpg')
+    center center fixed; /* Bildkälla: Pixabay (https://pixabay.com/sv/illustrations/tusen%c3%a5rsfalken-falk-star-wars-1627322/). */
+  background-size: cover;
+}
+
+/* h1-elementet blir centrliserad och får typsnittet från Google Fonts. Texten får röd textskugga. */
+h1 {
+  text-align: center;
+  font-family: 'Poller One', cursive;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 2px #6b0f15;
+}
+
+/* h2-elementet får samma teckenfamilj som h1:an, men en annan färg på textskuggan. */
+h2 {
+  font-family: 'Poller One', cursive;
+  text-shadow: 1px 1px 2px #173278;
+  font-size: 1.8em;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+/* Första bokstaven i p-element blir fet stil och blir mörkröd. */
+p::first-letter {
+  color: #6b0f15;
+  font-weight: bold;
+}
+
+/* En centraliserad wrapper som är 90% bred, har en mörkblå border och rundade hörn. */
+.wrapper {
+  margin: auto;
+  width: 90%;
+  border: 1em solid #173278;
+  background-color: #ffffff;
+  border-radius: 2em;
+  padding: 1rem;
+}
+
+/* Div-elementet innehållandes label, input-fält och knapp blir centraliserad. */
+.searchField {
+  text-align: center;
+  padding: 1rem;
+}
+
+/*  Etiketten tillhörande input-fältet hamnar på sig egen rad och får poller one teckenfamiljen. */
+label {
+  display: block;
+  font-family: 'Poller One', cursive;
+}
+
+/* Koderna nedan styr designen på input-fältet. */
+input[type='text'] {
+  width: 30%;
+  padding: 0.75rem 0.75rem;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 0.063rem solid #6b0f15;
+  box-sizing: border-box;
+}
+
+/* Koderna nedan styr designen på knappen. */
+button {
+  background-color: #173278;
+  color: #ffffff;
+  display: block; /* Knappen hamnar på sin egen rad. */
+  padding: 0.875rem 1.25rem;
+  margin: auto; /* Knappen blir centraliserad. */
+  border: none;
+  width: 20%;
+}
+
+/* När knappen hovras över blir den mörkröd och muspekaren får en pointer-effekt. */
+button:hover {
+  background-color: #6b0f15;
+  cursor: pointer;
+}
+
+/* Koderna nedan styr div-elementet innehållande informationen om Star Wars-filmerna. */
+.output {
+  width: 40%;
+  padding: 1rem;
+  margin: auto; /* Div-elementet blir centraliserad. */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text inom span-element får fet stil och poller one teckenfamiljen. */
+span {
+  font-family: 'Poller One', cursive;
+  font-weight: bold;
+}
+
+/* Text med denna klass blir centraliserad. */
+.centralizedText {
+  text-align: center;
+}
